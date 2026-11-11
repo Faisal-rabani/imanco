@@ -1,0 +1,22 @@
+:root {
+  color-scheme: light;
+  --brand: #a34747;
+  --brand-dark: #853535;
+  --ink: #25211e;
+  --muted: #5f564f;
+  --paper: #f8f5f0;
+  --line: #ded5cb;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); }
+a { color: inherit; text-decoration: none; }
+img { display: block; }
+button, input { font: inherit; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+::selection { background: #edd1c6; color: #321a17; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
